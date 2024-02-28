@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="recourses/styles/styles.css">
+    <link rel="stylesheet" href="resources/styles/styles.css">
 </head>
 <body>
 <header>
     <a href="index.html">
-        <img src="recourses/images/Cassity.png" alt="C logo">
+        <img src="resources/images/Cassity.png" alt="C logo">
     </a>
     <nav>
         <ul class="nav nav-pills">
@@ -76,7 +76,34 @@
     </div>
 
     <div class="displayContent">
-        <h1>Content Displayed on Each Page</h1>
+        <h1>Photo Album</h1>
+
+        <table id="albumTable"></table>
+
+        <script>
+            const table = document.getElementById('albumTable');
+            const pathToJSON = '/resources/api/data.json';
+
+            fetch(pathToJSON)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    data.forEach((item) => {
+                        const row = table.insertRow();
+                        const cell1 = row.insertCell(0);
+                        const cell2 = row.insertCell(1);
+
+                        cell1.innerHTML = `<img src="${item.mediaLink}" alt="Project Image">`;
+                        cell2.innerHTML = `<h3>${item.title}</h3><br><p>${item.description}</p>`
+                    })
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        </script>
+
     </div>
 </div>
 

@@ -31,6 +31,14 @@ h1 {
     color: #3858ff;
 }
 
+table td {
+    padding: 10px;
+}
+
+table tr {
+    margin-bottom: 15px;
+}
+
 .content .displayContent {
     width: 65%;
     padding: 25px;
