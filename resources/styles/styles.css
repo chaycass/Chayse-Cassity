@@ -28,6 +28,7 @@ header nav li {
 }
 
 h1 {
+    text-align: center;
     color: #3858ff;
 }
 
@@ -42,6 +43,13 @@ table tr {
 .content .displayContent {
     width: 65%;
     padding: 25px;
+}
+
+img.headshot {
+    width: 30%;
+    height: auto;
+    display: block; /* Ensure block-level behavior */
+    margin: 0 auto; /* Center horizontally */
 }
 
 footer {
