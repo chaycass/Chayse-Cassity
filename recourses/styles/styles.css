@@ -4,13 +4,12 @@ header {
     justify-content: space-between;
 }
 img {
-    width: 10%;
+    width: 30%;
     height: auto;
 }
 
 header nav {
     margin-right: 20px;
-    color: #122620;
 }
 header nav li {
     display: inline-block;
@@ -23,12 +22,9 @@ header nav li {
 }
 
 .content .sidebar {
-    margin: 70px;
-}
-
-.content .sidebar nav li {
-    list-style-type: none;
-    margin: 20px;
+    padding: 30px 70px;
+    max-width: 500px;
+    background-color: #c4d7ff;
 }
 
 .content .displayContent {

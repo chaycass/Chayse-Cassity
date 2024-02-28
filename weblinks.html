@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,9 @@
 </head>
 <body>
 <header>
-    [image goes here]
+    <a href="index.html">
+        <img src="recourses/images/Cassity.png" alt="C logo">
+    </a>
     <nav>
         <ul class="nav nav-pills">
             <li class="nav-item"><a class="nav-link active" href="resume.html"> Resume</a></li>
@@ -23,7 +25,54 @@
 
 <div class="content">
     <div class="sidebar">
-        <h1>sidebar content</h1>
+        <br>
+        <h2>Contact me</h2>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkgbrjn" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="sample@email.com" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <div id="apiDisplay"></div>
+
+        <script>
+            const div = document.getElementById('apiDisplay');
+            const url = 'https://icanhazdadjoke.com/';
+
+            const headers = new Headers({
+                'Accept': 'application/json'
+            });
+
+            fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML = `${data.joke}`
+                    div.appendChild(p);
+                })
+                .catch(function (error) {
+                    console.log(error)
+                });
+        </script>
+
     </div>
 
     <div class="displayContent">
@@ -32,7 +81,11 @@
 </div>
 
 <footer>
-
+    <a href="https://www.linkedin.com/in/chayse-cassity-8bbb4b250/">LinkedIn</a>
+    <a href="https://github.com/chaycass">Github</a>
+    <p>Chayse Cassity <br> 231 Caleb Dr, West Chester, PA 19382 <br> (484) 431 3836 <br> chaycassity@icloud.com <br></p>
+    <p>&copy; Copyright 2024</p>
 </footer>
+
 </body>
 </html>

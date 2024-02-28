@@ -25,6 +25,7 @@
 
 <div class="content">
     <div class="sidebar">
+        <br>
         <h2>Contact me</h2>
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkgbrjn" method="post">
             <fieldset id="fs-frm-inputs">
@@ -44,6 +45,33 @@
             </fieldset>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <hr>
+
+        <div id="apiDisplay"></div>
+
+        <script>
+            const div = document.getElementById('apiDisplay');
+            const url = 'https://icanhazdadjoke.com/';
+
+            const headers = new Headers({
+                'Accept': 'application/json'
+            });
+
+            fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML = `${data.joke}`
+                    div.appendChild(p);
+                })
+                .catch(function (error) {
+                    console.log(error)
+                });
+        </script>
 
     </div>
 
