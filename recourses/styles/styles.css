@@ -28,6 +28,7 @@ header nav li {
 }
 
 .content .displayContent {
+    width: 65%;
     padding: 25px;
 }
 
