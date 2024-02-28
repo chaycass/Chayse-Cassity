@@ -27,6 +27,10 @@ header nav li {
     background-color: #c4d7ff;
 }
 
+h1 {
+    color: #3858ff;
+}
+
 .content .displayContent {
     width: 65%;
     padding: 25px;
