@@ -3,8 +3,14 @@ header {
     display: flex;
     justify-content: space-between;
 }
+img {
+    width: 10%;
+    height: auto;
+}
+
 header nav {
     margin-right: 20px;
+    color: #122620;
 }
 header nav li {
     display: inline-block;
