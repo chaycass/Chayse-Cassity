@@ -54,8 +54,12 @@ img.headshot {
 
 footer {
     text-align: center;
+    background-color: #3858ff;
+    padding: 10px;
 }
 
 footer a {
     margin: 20px;
+    color: #fff;
+
 }
