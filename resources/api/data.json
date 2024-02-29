@@ -1,25 +1,25 @@
 [
   {
     "title": "Friends",
-    "description": "This is a photo of my friends and I after our clubs, K-pop Music and Dance (KPMD), showcase last semester; October 2023.",
+    "description": "This is a photo of my friends and I after KPMD's showcase last semester; October 2023.",
     "mediaLink": "resources/images/KPMD.JPG"
   },
 
   {
     "title": "My Favorite Pokemon",
-    "description": "This is a photo of my favorite pokemon Snorlax. Snorlax is considered the heaviest known Pokemon weighting over 1,000 pounds. Snorlax is a normal type pokemon and is weak against fighting type Pokemon.",
+    "description": "This is a photo of my favorite pokemon Snorlax. Snorlax is considered the heaviest known Pokemon weighing over 1,000 pounds. Snorlax is a normal type pokemon and is weak against fighting type Pokemon.",
     "mediaLink": "resources/images/Snorlax.jpg"
   },
 
   {
     "title": "Valorant",
-    "description": "This is a photo of a videogame I have been playing recently: Valorant. Valorant is an online multiplayer computer game, created by Riot Games. It is a first person game consisting of two teams of 5 battling each other. One side is attacking while the other is defending. Each player uses an agent who all have different unique abilities.",
+    "description": "This is a photo of a video game I have been playing recently: Valorant. Valorant is an online multiplayer computer game, created by Riot Games. It is a first person game consisting of two teams of 5 battling each other. One side is attacking while the other is defending. Each player uses an agent with it own unique abilities.",
     "mediaLink": "resources/images/Valorant.jpg"
   },
 
   {
     "title": "My Favorite Singer",
-    "description": "This is a photo of my favorite singer: Lana Del Rey. Lana Del Rey is an American singer-songwriter born June 21st, 1985. Currently she has released 9 studio albums and plans on another album in September of this year (2024). ",
+    "description": "This is a photo of my favorite singer: Lana Del Rey. Lana Del Rey is an American singer-songwriter born June 21st, 1985. She has currently released 9 studio albums and plans on releasing her 10th in September of this year (2024).",
     "mediaLink": "resources/images/LanaDelRey.JPG"
   },
 
@@ -31,7 +31,7 @@
 
   {
     "title": "My Favorite Movie",
-    "description": "This is a photo of my favorite movie: Coraline. Coraline is a stop-motion film released in 2009. It is considered to be a Horror/Fantasy movie was known to be disturbing to younger audiences.",
+    "description": "This is a photo of my favorite movie: Coraline. Coraline is a stop-motion film released in 2009. It is a Horror/Fantasy movie and was known to be disturbing to younger audiences.",
     "mediaLink": "resources/images/Coraline.jpg"
   }
 ]
